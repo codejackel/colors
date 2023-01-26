@@ -18,6 +18,7 @@ Get started with build, run and build docker images.
 - [Maven Build And Package](#maven-build-and-package)
 - [Spring Boot Run](#spring-boot-run)
 - [Docker Build and Push to repository](#docker-build-and-push-to-repository)
+- [Accessing Web Application](#accessing-web-application)
 
 <hr/>
 
@@ -72,4 +73,7 @@ Below command line can be used in project root to run spring boot application.
 
 [Web Application URL](http://localhost:8080)
 <img src="screenshots/Web-UI.png" alt="Web-UI">
+
+Curl Command:
+<pre><code>curl --location --request GET 'http://localhost:8080/api/v1'</code></pre>
 
