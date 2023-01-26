@@ -72,8 +72,9 @@
                         <phase>generate-sources</phase>
                         <configuration>
                             <workingDirectory>${project.basedir}/src/main/frontend</workingDirectory>
-                            <executable>ng</executable>
+                            <executable>npm</executable>
                             <arguments>
+                                <argument>run-script</argument>
                                 <argument>build</argument>
                             </arguments>
                         </configuration>
