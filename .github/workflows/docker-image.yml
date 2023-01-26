@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the colors Docker image
-      run: docker build . --file Dockerfile --tag bhushanpadhye/colors:$(date +%s)
+      run: docker build . --file Dockerfile --tag bhushanpadhye/github-colors:$(date +%s)
