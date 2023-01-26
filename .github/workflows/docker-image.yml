@@ -35,14 +35,19 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Get Tag name
+      id: version
+      run: |
+        "TAG_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_OUTPUT
+
     - name: Build and push the colors Docker image
       uses: docker/build-push-action@v3
       with:
         context: .
         push: true
         tags: |
-          bhushanpadhye/ci-colors:latest
-          bhushanpadhye/ci-colors:${{ github.ref_name }}-${{ github.run_number }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/cj-colors:latest
+          ${{ secrets.DOCKERHUB_USERNAME }}/cj-colors:${{ github.ref_name }}-v${{ steps.version.outputs.TAG_NAME }}-u${{ github.run_number }}
     
     
 

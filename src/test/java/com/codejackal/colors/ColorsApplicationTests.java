@@ -1,4 +1,4 @@
-package com.codejackel.colors;
+package com.codejackal.colors;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

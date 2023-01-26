@@ -1,6 +1,6 @@
-package com.codejackel.colors.controller;
+package com.codejackal.colors.controller;
 
-import com.codejackel.colors.domain.AppArgs;
+import com.codejackal.colors.domain.AppArgs;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;

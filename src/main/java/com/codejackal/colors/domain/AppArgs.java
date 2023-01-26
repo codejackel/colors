@@ -1,4 +1,4 @@
-package com.codejackel.colors.domain;
+package com.codejackal.colors.domain;
 
 import lombok.*;
 
