@@ -29,6 +29,11 @@ jobs:
     - name: Build with Maven
       run: mvn --batch-mode --update-snapshots clean package -e
 
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+
     - name: Build and push the colors Docker image
       uses: docker/build-push-action@v1
       with:
@@ -36,7 +41,9 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         dockerfile: Dockerfile
         repository: bhushanpadhye/ci-colors
-        tag_with_ref: true
+        tags: |
+          bhushanpadhye/ci-colors:latest
+          bhushanpadhye/ci-colors:${{ steps.extract_branch.outputs.branch }}-${{ github.run_id }}
     
     
 
