@@ -2,7 +2,7 @@
 <h2 align="center">Colors</h2>
 
 <p align="center">
-  <img src="./colors-logo.png" alt="colors-logo" width="120px" height="120px"/>
+  <img src="screenshots/colors-logo.png" alt="colors-logo" width="120px" height="120px"/>
   <br>
   <i>This application is meant for practicing basic kubernetes objects like pod, replicaSet etc.
     <br> using Java 17, Spring Boot 3 and Angular 15.</i>
@@ -28,6 +28,7 @@ Get started with build, run and build docker images.
 - Node 18
 - Angular Cli 15
 - Npm 8
+- Docker(Optional)
 
 ### Maven Build and Package
 
