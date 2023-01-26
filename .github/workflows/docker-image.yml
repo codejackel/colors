@@ -41,7 +41,7 @@ jobs:
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/github/colors:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/github/colors:$(date +%s)
+          ${{ secrets.DOCKERHUB_USERNAME }}/github/colors:${{ github.run_id }}
     
     
 
