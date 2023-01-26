@@ -1,6 +1,6 @@
-package com.codjackel.colors;
+package com.codejackel.colors;
 
-import com.codjackel.colors.domain.AppArgs;
+import com.codejackel.colors.domain.AppArgs;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

@@ -48,11 +48,11 @@ Below command line can be used in project root to perform maven package.
 ### Spring Boot Run
 
 Below command line can be used in project root to run spring boot application.
-<pre><code>java -jar target/colors-{version}.jar</code></pre>
+<pre><code>java -jar target/colors-{version}.jar com.codejackel.colors.ColorsApplication</code></pre>
 
 Below command line can be used in project root to run spring boot application.
 **<i>Passing program arguments of color and message</i>
-<pre><code>java -jar target/colors-{version}.jar com.codjackel.colors.ColorsApplication --color=blue --message=My Personalized Message</code></pre>
+<pre><code>java -jar target/colors-{version}.jar com.codejackel.colors.ColorsApplication --color=blue --message="My Personalized Message"</code></pre>
 
 <h5 style="text-decoration: underline">Spring Boot RunConfiguration in intellij</h5>
 <img src="screenshots/spring-boot-run-intellij.png" alt="spring-boot-run-intellij">
