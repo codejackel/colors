@@ -1,1 +1,5 @@
-
+project:
+  version: @project.version@
+  groupId: @project.groupId@
+  id: @project.groupId@:@project.artifactId@:@project.version@
+  artifactid: @project.artifactId@
